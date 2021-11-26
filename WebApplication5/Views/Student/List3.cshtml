@@ -1,0 +1,25 @@
+﻿@using  WebApplication5.Models
+@model WebApplication5.Models.Student
+@{
+    ViewBag.Title = "List2";
+}
+
+<h2>List of Students </h2>
+<table>
+    <tr style="background-color:olivedrab">
+        <th> ID </th>
+        <th> Name </th>
+        <th> Batch Code </th>
+        <th> Marks </th>
+    </tr>
+    @foreach (var obj in (IEnumerable<Student>)ViewData["students"])
+    {
+        <tr>
+            <td> @obj.Id </td>
+            <td> @obj.Name </td>
+            <td> @obj.BatchCode </td>
+            <td> @obj.Marks </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "List1";
+}
+
+<h2>List1</h2>
+@{ foreach (var obj in ViewBag.students)
+    {
+    @obj.Id
+    @obj.Name
+    @obj.BatchCode
+
+    @obj.Marks
+    <br />
+}
+}
+

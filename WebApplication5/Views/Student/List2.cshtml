@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "List2";
+}
+
+<h2>List of Students </h2>
+<table style="border:2px double red;align-content:center;width:500px">
+    <tr style="background-color:olivedrab">
+        <th> ID </th>
+        <th> Name </th>
+        <th> Batch Code </th>
+        <th> Marks </th>
+    </tr>
+    @foreach (var obj in ViewBag.students)
+    {
+    <tr>
+        <td> @obj.Id </td>
+        <td> @obj.Name </td>
+        <td> @obj.BatchCode </td>
+        <td> @obj.Marks </td>
+    </tr>
+    }
+</table>
+
